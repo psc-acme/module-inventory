@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/module-inventory",
+    "description": "Package module-inventory for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ModuleInventory\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/finder": "^7.0",
+        "illuminate/database": "^11.0",
+        "nikic/php-parser": "^5.0",
+        "psc-acme/worker-catalog": "^1.0",
+        "psc-acme/tracker-product": "^1.0",
+        "psc-acme/factory-cart": "^1.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
